@@ -8,7 +8,17 @@ public class Find_three_largest_element {
 		//but it doesn't print the duplicate value;
 		int arr[]= {12,34,98,23,11,83,24,98};
 		int n=arr.length;
+		int k=3;
 		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		//its best when u know the how many elements u have to printed or return;
 		int first,second,third;
 		first=second=third=Integer.MIN_VALUE;
 		
@@ -31,6 +41,8 @@ public class Find_three_largest_element {
 		}
 		
 		System.out.print(first+" "+second+" "+third);
+		
+		*/
 	}
 
 }
