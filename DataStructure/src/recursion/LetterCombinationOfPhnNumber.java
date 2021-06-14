@@ -16,7 +16,7 @@ public class LetterCombinationOfPhnNumber {
 			String s=sc.next();
 			List<String> arr=new ArrayList<>();
 			
-			arr=letcomb(s,"");
+			letcomb(s,"",arr);
 			System.out.print(arr);
 		}
 		
@@ -25,8 +25,8 @@ public class LetterCombinationOfPhnNumber {
 	}
 	
 	static String aar[]= {"0","1","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
-	static List<String> arr=new ArrayList();
-	private static List<String> letcomb(String s, String string) {
+	//
+	private static List<String> letcomb(String s, String string,List<String> arr) {
 		// TODO Auto-generated method stub
 		if(s.length()==0) {
 			arr.add(string);
@@ -37,7 +37,7 @@ public class LetterCombinationOfPhnNumber {
 		String ss=aar[n];
 		for(int i=0;i<ss.length();i++) {
 			char c=ss.charAt(i);
-			letcomb(s.substring(1),string+c);
+			letcomb(s.substring(1),string+c, arr);
 		}
 		
 		return arr;
