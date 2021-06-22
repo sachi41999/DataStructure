@@ -4,9 +4,9 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double h=0.5;
-		//h++;
-		System.out.println((int)(h+1.5));
+		char c='d';
+		c=(char) (c+1);
+		System.out.println(c);
 	}
 
 }
